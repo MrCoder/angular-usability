@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)#btn-groups-justified -->
-<html lang="en" ng-app="Cer">
+<html lang="en" ng-app>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -196,8 +196,8 @@
     // #prettify
 
     // @ add asterisk to the label of a required input field
-    var accessibilityModule = angular.module('Accessibility',[]);
-    accessibilityModule.directive('accRequired', function(){
+    var ngModule = angular.module('ng');
+    ngModule.directive('accRequired', function(){
         return function($scope, element, attrs){
             console.log(arguments);
             console.log(element.attr('id'));
@@ -209,7 +209,6 @@
         }
     });
 
-    angular.module('Cer', ['Accessibility']);
 
 </script>
 
